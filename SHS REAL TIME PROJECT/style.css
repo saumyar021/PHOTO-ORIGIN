@@ -1,0 +1,380 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    height: 92vh;
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('camera-820018__480.jpg');
+    background-size: cover;
+    background-image: fixed;
+}
+
+nav{
+    width: 1280px;
+    height:80px;
+    background: white;
+    color: black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 70px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.logo{
+    font-family:  "Times New Roman";
+    font-size: 26px;
+
+}
+
+.logo span{
+    color:rgb(217, 56, 56);
+}
+
+.menu a{
+   text-decoration: none;
+   color: black;
+   padding: 10px 20px;
+   font-family:sans-serif;
+   font-size:15px;
+}
+
+.menu a:first-child{
+   color:rgb(217, 56, 56);
+
+}
+
+.menu a:hover{
+    color:rgb(217, 56, 56);
+
+}
+
+.icon i{
+    font-size: 20px;
+}
+
+.icon i:hover{ 
+    color:rgb(217, 56, 56);
+
+}
+.icon a{
+    text-decoration: none;
+    font-family:sans-serif;
+    background:rgb(217, 56, 56) ;
+    color:white;
+    padding:10px 20px;
+    margin-left:30px;
+    border-radius:5px;
+}
+.icon a:hover{
+    background: black;
+    cursor: pointer;
+}
+
+.h-text{
+    color:white;
+    max-width:650px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+#camera{
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.h-text{
+    font-family: sans-serif;
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+.h-text input{
+    border-bottom: 2px solid black;
+    border-right: none;
+    border-left: none;
+    border-top:none;
+    padding:10px;
+    width:50%;
+    /* outline:none; */
+    font-size:20px;
+    border-radius:5px;
+    background: white;
+    font-weight: bold;
+}
+
+.h-text button{
+    margin-top:10px;
+    width:20%;
+    padding:10px;
+    border:none;
+    outline:none;
+    background:rgb(217, 56, 56);
+    color:white;
+    font-size:20px;
+    border-radius:5px;
+
+}
+
+/* Gallery section */
+
+.filter-gallery{
+    padding:100px;
+
+}
+
+.portfolio-menu{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.portfolio-menu ul li{
+    display:inline-block;
+    list-style: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+    margin:10px 0px;
+    padding:10px 20px;
+    transition: 0.6s ease;
+    text-align: center;
+}
+
+.portfolio-menu ul li:hover{
+    color:white;
+    background:rgb(217, 56, 56) ;
+    border-radius: 5px;
+}
+
+li.active{
+    color:white;
+    background:rgb(217, 56, 56) ;
+    border-radius: 5px;
+}
+
+
+/* Gallery  */
+
+.portfolio-item{
+    width:100%;
+    margin-left: 50px;
+    margin-top: 80px;
+}
+
+.portfolio-item .item{
+     width:350px;
+     height:350px;
+     float:left;
+     /* margin-bottom: 5px; */
+       /* margin-right: 10px;  */
+     /* margin-left: 100px; */
+
+}
+
+.portfolio-item .item img{
+    width: 80%;
+    height: 80%;
+    border-radius: 5px;
+    margin-right: 10px; 
+}
+
+/* member section */
+
+.member{
+    width: 100%;
+    /* padding:20px 60px;  */
+    font-family: sans-serif;
+    
+}
+
+ .member-info{ 
+    text-align: center; 
+    justify-content: center;  
+}
+
+.member-info h1{
+    font-size:2.5em;
+}
+
+
+.member-info h1 span{
+    color:rgb(217, 56, 56) ;
+}        
+
+
+.member-card{
+    text-align: center;
+    margin:auto;
+    padding-top:20px;
+    width:50%;
+}
+
+.member-card p{
+    line-height: 2em;
+    margin:20px 0px;
+    font-family: sans-serif;
+}
+
+.member-card h2{
+     margin:15px 0px;
+     font-size:1.5em;
+     font-family: 'Times New Roman', Times, serif;
+     font-weight: bold;
+
+}
+
+#imgg{
+    border-radius: 10px;
+}
+
+/* m- images section */
+
+.m-images{
+    width:100%;
+    display:flex;
+    margin:40px 40px;
+    overflow:hidden; 
+    margin-left: 20px;
+}
+
+.m-images img{
+    width:200px;
+    height:200px;
+    cursor:pointer;
+    transition:0.4s ease-in-out;
+
+}
+
+.m-images img:hover{
+    transform: scale(1.5);
+}
+
+/* footer section */
+
+footer{
+  width:100%;
+  height:100vh;
+  background-color:#262626;
+  padding:50px 100px;
+
+}
+
+.newsletter{
+ width:100%;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ padding:30px;
+ border:1px solid rgb(255, 255, 255,0.2);
+}
+
+.newsletter >div{
+    flex-basis: 50%;
+}
+
+.ntext{
+  text-align:right;
+
+}
+
+.newsletter h2{
+  color:white;
+  font-size: 2em;
+  font-family: sans-serif;
+
+}
+
+.newsletter p{
+  color:white;
+  font-size: 20px; 
+  margin-top: 10px;
+}
+
+.newsletter label{
+    position: relative;
+
+}
+
+.newsletter input{
+   padding:18px;
+   width:280px;
+   border-radius: 6px;
+   border:none;
+   outline:none;
+   font-family:sans-serif;
+
+}
+
+.newsletter button{
+    position: absolute;
+     /* right:0;  */
+    padding:18px;
+    border-radius: 6px;
+    border:none;
+    outline:none;
+    /* width:5%; */
+    color:white;
+    background:rgb(217, 56, 56) ;
+    border-radius: 0px 8px 8px 0px;
+}
+
+.f-contact{ 
+    color:white;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:2.5em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.f-contact>div{
+    flex-basis:80%;
+
+}
+
+.f-contact p{
+   line-height: 2em;
+   font-size :20px;
+   color:grey;
+   cursor:pointer;
+
+}
+
+.f-contact p:hover{ 
+   color:white;
+
+
+}
+
+.f-contact i{
+    background:white;
+    color:black;
+    padding:10px;
+    font-size: 16px;
+    margin:20px 5px;
+    border-radius: 50px;
+    transition:0.4s ease;
+}
+
+.f-contact i:hover{
+  background:transparent;
+  color:white;
+  border: 1px solid white;
+
+}
